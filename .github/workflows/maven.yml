@@ -12,6 +12,8 @@ on:
 jobs:
   build:
 
+    name: Java ${{ matrix.java-version }}
+    
     runs-on: ubuntu-latest
 
     strategy:
