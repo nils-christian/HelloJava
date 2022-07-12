@@ -1,0 +1,9 @@
+grammar hellojava.HelloJava with org.eclipse.xtext.xbase.Xbase
+
+generate helloJava "http://www.HelloJava.hellojava"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' type=JvmParameterizedTypeReference '!';
