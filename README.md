@@ -10,7 +10,7 @@ In the [language](language) folder the DSL is located. It's a very simple Xbase 
 Within [sample](sample) you can find a small maven Project which uses the DSL. The project contains a Java type which is referenced in the DSL file. 
 
 ## Build
-I created a [GitHub Actions matrix build](.github/workflows/maven.yml) in order to demonstrate the behaviour.
+I created a [GitHub Actions matrix build](.github/workflows/maven.yml) in order to demonstrate the behaviour. It installs the language to the local maven repo and tries to build the sample using Java 11 up to Java 17.
 
 As you can see in the [results](https://github.com/OLibutzki/HelloJava/actions/runs/2656339113) it works for Java 11 - 14 and is broken for Java 15 - 17:
 ```
