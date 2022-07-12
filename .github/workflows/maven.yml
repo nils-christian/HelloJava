@@ -32,4 +32,4 @@ jobs:
     - name: Install language
       run: mvn -B install --file language/pom.xml 
     - name: Build sample
-      run: mvn -B verify --file sample/pom.xml -Dmaven.compiler.source=${{ matrix.java-version }} -Dmaven.compiler.target=${{ matrix.java-version }}
+      run: mvn -X -B verify --file sample/pom.xml -Dmaven.compiler.source=${{ matrix.java-version }} -Dmaven.compiler.target=${{ matrix.java-version }}
