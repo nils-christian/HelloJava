@@ -30,4 +30,4 @@ jobs:
     - name: Install language
       run: mvn -B install --file language/pom.xml 
     - name: Build sample
-      run: mvn -B verify --file sample/pom.xml -Dmaven.compiler.source=${java-version} -Dmaven.compiler.target=${java-version}
+      run: mvn -B verify --file sample/pom.xml -Dmaven.compiler.source=${{ java-version }} -Dmaven.compiler.target=${{ java-version }}
