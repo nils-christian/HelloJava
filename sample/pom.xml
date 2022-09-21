@@ -8,7 +8,7 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<xtext-version>2.28.0.M1</xtext-version>
+		<xtext-version>2.29.0-SNAPSHOT</xtext-version>
 	</properties>
 
 	<build>
@@ -83,5 +83,55 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>xtext-lib</id>
+			<name>xtext-lib</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-lib/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-core</id>
+			<name>xtext-core</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-core/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-extras</id>
+			<name>xtext-extras</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-extras/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-xtend</id>
+			<name>xtext-xtend</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-xtend/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
 
+		<repository>
+			<id>xtext-web</id>
+			<name>xtext-web</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-web/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>xtext-maven</id>
+			<name>xtext-maven</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-maven/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-core</id>
+			<name>xtext-core</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-core/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>xtext-lib</id>
+			<name>xtext-lib</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-lib/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-extras</id>
+			<name>xtext-extras</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-extras/job/cd_platformUpdateExp/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
